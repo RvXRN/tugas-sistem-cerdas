@@ -1,0 +1,113 @@
+/* style.css - Full Light Theme */
+
+
+/* 1. Background Aplikasi */
+
+.stApp {
+    background-color: #F8FAFC;
+    color: #0F172A;
+}
+
+
+/* 2. Kartu dan form mengikuti tema */
+
+div[data-testid="stVerticalBlock"]>div:has(div.stTabs) {
+    background-color: #FFFFFF !important;
+    border-color: #CBD5E1 !important;
+}
+
+input {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 1px solid #94A3B8 !important;
+}
+
+
+/* Buat label dan teks form mengikuti tema */
+
+.stTextInput label,
+.stTextInput>label,
+.stTextInput>div>div>label,
+.stTextArea label,
+.stTextArea>label,
+.stTextArea>div>div>label,
+.stSelectbox label,
+.stSelectbox>label,
+.stSelectbox>div>div>label,
+[data-testid="stMarkdownContainer"] {
+    color: #0F172A !important;
+}
+
+
+/* 2. Memaksa Gambar & Teks ke Tengah */
+
+[data-testid="stImage"],
+[data-testid="stMarkdownContainer"] {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+[data-testid="stImage"] img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* 3. Card Login (Tengah & Proporsional) */
+
+
+/* Kode ini yang bikin form kamu nggak melar ke samping */
+
+div[data-testid="stVerticalBlock"]>div:has(div.stTabs) {
+    background-color: var(--secondaryBackgroundColor, #161B22) !important;
+    padding: 40px !important;
+    border-radius: 20px !important;
+    border: 1px solid var(--neutralBorder, #30363D) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+    max-width: 450px !important;
+    margin: 0 auto !important;
+}
+
+
+/* 4. Styling Tab (Masuk/Daftar) */
+
+.stTabs [data-baseweb="tab-list"] {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #334155 !important;
+}
+
+
+/* 5. Tombol Biru Elektrik */
+
+.stButton>button {
+    background: linear-gradient(135deg, #1E90FF 0%, #0077B6 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    height: 3em !important;
+    width: 100% !important;
+    font-weight: bold !important;
+    transition: 0.3s all ease;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4);
+}
+
+
+/* 6. Input Field */
+
+input {
+    background-color: #0D1117 !important;
+    color: white !important;
+    border: 1px solid #30363D !important;
+}
